@@ -25,12 +25,20 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+             
+              "src/assets/css/style.css",
+              "src/assets/css/icons.min.css",
+              "src/assets/css/plugins.css"
+             
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/vendor/modernizr-2.8.3.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/main.js"
             ]
           },
           "configurations": {
