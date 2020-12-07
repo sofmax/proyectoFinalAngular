@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input,Output ,EventEmitter} from '@angular/core';
+import {Product} from '../../models/product'
 
 @Component({
   selector: 'app-product',
@@ -7,14 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  product = {
-    id: '1',
-    imagen: 'assets/images/1.jpg',
-    title: 'Detergente OMO',
-    categoria : 'Detergente',
-    descripcion: 'Detergente de 1kg ropa blanca y color',
-    price: 3000,
+  // product : Product = {
+  //   id: 1,
+  //   imagen: 'assets/img/product/1.jpg',
+  //   title: 'Detergente OMO 5KL',
+  //   categoria : 'Detergente Ropa',
+  //   descripcion: 'Detergente de 1kg ropa blanca y color',
+  //   price: 3000,
+  // }
+
+  @Input() product: Product;
+  @Output() productClicked: EventEmitter<any> = new EventEmitter();
+
+  addCart() {
+    console.log("producto agregado")
+    this.productClicked.emit(this.product.id)
   }
+
+  
 
   constructor() { }
 

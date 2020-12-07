@@ -1,14 +1,62 @@
-<div style="padding-top: 145px; padding-left: 10rem; position: relative;">
-    <p>product works!</p>
-    <p>product works!</p>
-    <p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p><p>product works!</p>
-    <p>product works!</p>
-</div>
+<!-- <div style="padding-top: 9rem; padding-left: 10rem;  padding-right: 10rem;"> -->
+    <!-- <div class="product"> -->
+        <!-- <h3>{{product.title}}</h3>
+        <img [src]="product.imagen" alt="">
+        <strong> {{product.price}}</strong>
+        <button (click)="addCart()">AGREGAR AL CARRO</button> -->
+
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                {{product.title}}
+              </div>
+         
+            <img [src]="product.imagen" class="card-img-top" alt="...">
+            <div class="card-body">
+             
+              <p class="card-text">{{product.descripcion}}</p>
+              <!-- <a href="#" class="btn btn-primary">Agregar al carro</a> -->
+              <button (click)="addCart()">AGREGAR AL CARRO</button> 
+            </div>
+          </div> 
+  
+
+
+<!-- <div class="product-wrap mb-30 product-grid">
+    <div class="product-img">
+        <a href="single-product.html"><img src="assets/img/product/pro-1.jpg" alt=""></a>
+        <span>Sale</span>
+        <div class="product-action">
+            <ul>
+                <li><a title="Add To Cart" href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
+                <li><a title="Compare" href="#"><i class="fa fa-random"></i></a></li>
+                <li><a title="Wishlist" href="#"><i class="fa fa-heart-o"></i></a></li>
+                <li><a title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#"><i class="fa fa-eye"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="product-content">
+        <div class="pro-title-rating-wrap">
+            <div class="product-title">
+                <h3><a href="single-product.html">Marker Pen</a></h3>
+            </div>
+            <div class="product-rating">
+                <i class="zmdi zmdi-star"></i>
+                <i class="zmdi zmdi-star"></i>
+                <i class="zmdi zmdi-star"></i>
+                <i class="zmdi zmdi-star"></i>
+                <i class="zmdi zmdi-star"></i>
+            </div>
+        </div>
+        <div class="pro-category-price">
+            <span class="pro-category">Drawing</span>
+            <span class="pro-price">$10</span>
+        </div>
+    </div>
+</div> -->
+
+<!-- <h3>{{product.title}}</h3>
+<img [src]="product.imagen" alt="">
+<strong> {{product.price}}</strong>
+<button (click)="addCart()">AGREGAR AL CARRO</button>  -->
+
