@@ -19,7 +19,7 @@ export class ProductsComponent implements OnInit {
   {
     id: 2,
     imagen: 'assets/img//product/2.jpg',
-    title: 'Detergente OMO',
+    title: 'Detergente HomeCare',
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
     price: 3000,
@@ -27,15 +27,15 @@ export class ProductsComponent implements OnInit {
   {
     id: 3,
     imagen: 'assets/img//product/3.jpg',
-    title: 'Detergente OMO',
+    title: 'Detergente Popeye',
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
-    price: 3000,
+    price: 5000,
   },
   {
     id: 4,
     imagen: 'assets/img//product/4.jpg',
-    title: 'Detergente OMO',
+    title: 'Detergente Ariel',
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
     price: 3000,
@@ -43,7 +43,7 @@ export class ProductsComponent implements OnInit {
   {
     id: 5,
     imagen: 'assets/img//product/5.jpg',
-    title: 'Detergente OMO',
+    title: 'Detergente OMO Soft',
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
     price: 3000,
@@ -51,7 +51,7 @@ export class ProductsComponent implements OnInit {
   {
     id: 6,
     imagen: 'assets/img//product/6.jpg',
-    title: 'Detergente OMO',
+    title: 'Detergente Perwoll',
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
     price: 3000,

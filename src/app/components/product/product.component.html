@@ -7,18 +7,77 @@
 
 
         <div class="card" style="width: 18rem;">
-            <div class="card-header">
+            
+            <div class="product-wrap mb-30">
+            <!-- <div class="card-header">
                 {{product.title}}
-              </div>
+              </div> -->
+            
+            <div>
+                <div class="product-title-big">
+                    {{product.title}}
+                </div>
+                <hr width="90%" />
+            </div>
          
             <img [src]="product.imagen" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body" style="padding: 0px !important;">
              
-              <p class="card-text">{{product.descripcion}}</p>
-              <!-- <a href="#" class="btn btn-primary">Agregar al carro</a> -->
-              <button (click)="addCart()">AGREGAR AL CARRO</button> 
+              <!-- <p class="card-text">{{product.descripcion}}</p>
+             <a href="#" class="btn btn-primary">Agregar al carro</a> 
+              <button (click)="addCart()">AGREGAR AL CARRO</button>  -->
             </div>
-          </div> 
+           
+            <div class="product-content" style="margin-left: 0.5rem; margin-right: 0.5rem;">
+                <div class="pro-title-rating-wrap">
+                    <div class="product-title" >
+                        <h3><a href="#">Puntuacion</a></h3>
+                    </div>
+                    <div class="product-rating">
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star-outline"></i>
+                    </div>
+                </div>
+                <!-- ----------------UNIDAD DE MEDIDA ------------------------------- -->
+                <div class="pro-category-price">
+                    <span class="pro-category">Unidad:</span>
+                    <span class="pro-price">${{product.price}}</span>
+                </div>
+
+                <!-- ----------------Cantidad ------------------------------- -->
+                <div class="pro-category-price">
+                    <span class="pro-category">Cantidad:</span>
+                    <span class="pro-price">${{product.price}}</span>
+                </div>
+
+                <!-- ----------------Categoria ------------------------------- -->
+                <div class="pro-category-price">
+                    <span class="pro-category">Categoria:</span>
+                    <span class="pro-price">${{product.price}}</span>
+                </div>
+
+                <!-- ----------------Marca------------------------------- -->
+                <div class="pro-category-price">
+                    <span class="pro-category">Marca:</span>
+                    <span class="pro-price">${{product.price}}</span>
+                </div>
+
+
+
+                <div class="pro-category-price">
+                    <span class="pro-category">Precio:</span>
+                    <span class="pro-price">${{product.price}}</span>
+                </div>
+
+                <div class="pro-details-cart">
+                    <a class="default-btn btn-hover"  (click)="addCart()" >Agregar al Carro</a>
+                </div>
+            </div>
+        
+        </div> 
   
 
 

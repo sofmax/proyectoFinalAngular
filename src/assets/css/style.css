@@ -1209,13 +1209,33 @@ textarea:focus {
 .bg-gray {
   background-color: #f6f7f8; }
 
+
+  .default-btn2 {
+    background-color: #00a651;
+    margin-top: 1rem;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 10px 8px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    line-height: 1;
+    letter-spacing: .5px;
+    border-radius: 50px; }  
+
 .default-btn {
   background-color: #00a651;
+  width: 12rem;
+  margin-top: 1rem;
   color: #fff;
-  display: inline-block;
+  display: block;
   font-size: 16px;
   font-weight: bold;
-  padding: 21px 40px 21px;
+  padding: 8px 10px 8px;
   text-align: center;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -1223,7 +1243,11 @@ textarea:focus {
   transition: all 0.3s ease 0s;
   line-height: 1;
   letter-spacing: .5px;
-  border-radius: 50px; }
+  border-radius: 50px; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
   .default-btn:hover {
     background-color: #333;
     color: #fff; }
@@ -6449,7 +6473,7 @@ textarea:focus {
       .pro-details-quality .pro-details-cart {
         margin: 0 15px; } }
     .pro-details-quality .pro-details-cart a.default-btn {
-      padding: 17px 30px 17px;
+      padding: 8px 20px 8px;
       font-size: 12px; }
   .pro-details-quality .pro-details-wishlist a {
     border: 1px solid #dfe1e5;

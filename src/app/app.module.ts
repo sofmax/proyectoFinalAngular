@@ -9,6 +9,18 @@ import { IndexComponent } from './components/index/index.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule} from '@angular/fire/auth';
+import {AngularFireStorageModule} from '@angular/fire/storage';
+
+import { environment } from './../environments/environment';       
+import { from } from 'rxjs';
+
+import { HomeComponent} from './home/home.component';
+import { ContactComponent} from './contact/contact.component';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component'
+import { Products2Component } from './products2/products2.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +28,19 @@ import { ProductsComponent } from './components/products/products.component';
     FooterComponent,
     IndexComponent,
     ProductComponent,
-    ProductsComponent
+    ProductsComponent,
+    Products2Component,
+    HomeComponent,
+    ContactComponent,
+    QuienesSomosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
