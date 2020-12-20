@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "fir-angular2020": {
+      "hosting": {
+        "proyectoFinalAngular": [
+          "fir-angular2020"
+        ]
+      }
+    }
+  }
+}
