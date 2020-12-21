@@ -24,4 +24,18 @@ body {
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  .displayTable {
+    display: table;
+    width: 50%;
+    height: 50%;
+    background:hsl(133, 47%, 45%);
+  }
+  
+  .displayTableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    height: 50%;
+  }
   

@@ -1,1 +1,25 @@
-<p>login works!</p>
+<app-header></app-header>
+<div class="displayTable">
+    <div class="displayTableCell">
+  
+      <div class="authBlock">
+        <h3>Ingreso</h3>
+        <div class="formGroup">
+          <input type="text" class="formControl" placeholder="Username" #userName required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" #userPassword required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="button" class="btn btnPrimary" value="Aceptar" (click)="authService.login(userName.value, userPassword.value)">
+        </div>
+        
+      </div>
+  
+    </div>
+  </div>
+<app-footer></app-footer>
+
+

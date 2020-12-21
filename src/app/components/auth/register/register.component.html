@@ -1,1 +1,27 @@
-<p>register works!</p>
+<app-header></app-header>
+<div class="displayTable">
+    <div class="displayTableCell">
+  
+  
+      <div class="authBlock">
+        <h3>Crear Usuario</h3>
+  
+        <div class="formGroup">
+          <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="password" class="formControl" placeholder="Password" #userPwd required>
+        </div>
+  
+        <div class="formGroup">
+          <input type="button" class="btn btnPrimary" value="Aceptar" (click)="authService.register(userEmail.value, userPwd.value)">
+        </div>
+        
+      </div> 
+      
+    </div>
+  
+  </div>
+  <app-footer></app-footer>
+  

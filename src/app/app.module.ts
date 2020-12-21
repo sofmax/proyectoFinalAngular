@@ -9,9 +9,6 @@ import { IndexComponent } from './components/index/index.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule} from '@angular/fire/auth';
-import {AngularFireStorageModule} from '@angular/fire/storage';
 
 import { environment } from './../environments/environment';       
 import { from } from 'rxjs';
@@ -20,6 +17,17 @@ import { HomeComponent} from './home/home.component';
 import { ContactComponent} from './contact/contact.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component'
 import { Products2Component } from './products2/products2.component';
+import {LoginComponent} from './components/auth/login/login.component';
+import {RegisterComponent} from './components/auth/register/register.component';
+
+// Firebase services 
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+
+// Auth service
+import { AuthService } from "./core/service/auth.service";
+
 
 @NgModule({
   declarations: [
@@ -32,17 +40,20 @@ import { Products2Component } from './products2/products2.component';
     Products2Component,
     HomeComponent,
     ContactComponent,
-    QuienesSomosComponent
+    QuienesSomosComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFirestoreModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
