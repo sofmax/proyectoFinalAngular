@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,13 @@ import { HomeComponent} from './home/home.component';
 import { ContactComponent} from './contact/contact.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component'
 import { Products2Component } from './products2/products2.component';
+import { IndicadoresComponent } from './indicadores/indicadores.component';
+import { IndicatorsComponent } from './components/indicators/indicators.component';
+import { IndicatorComponent } from './components/indicator/indicator.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +40,10 @@ import { Products2Component } from './products2/products2.component';
     Products2Component,
     HomeComponent,
     ContactComponent,
-    QuienesSomosComponent
+    QuienesSomosComponent,
+    IndicadoresComponent,
+    IndicatorsComponent,
+    IndicatorComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +51,8 @@ import { Products2Component } from './products2/products2.component';
 
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

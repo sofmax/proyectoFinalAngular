@@ -6,6 +6,7 @@ import {QuienesSomosComponent} from './quienes-somos/quienes-somos.component';
 //import {ProductsComponent} from './products/products.component';
 import {Products2Component} from './products2/products2.component'
 import {ContactComponent} from './contact/contact.component';
+import {IndicadoresComponent} from './indicadores/indicadores.component'
 
  //const routes: Routes = [];
 
@@ -15,8 +16,7 @@ import {ContactComponent} from './contact/contact.component';
 
   { path: 'quienes', component: QuienesSomosComponent},
   { path: 'productos', component: Products2Component},
-
-
+  { path: 'indicadores', component: IndicadoresComponent},
 
   { path: 'contacto', component: ContactComponent},
 
