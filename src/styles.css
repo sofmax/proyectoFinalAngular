@@ -26,16 +26,22 @@ body {
   }
 
   .displayTable {
-    display: table;
     width: 50%;
     height: 50%;
-    background:hsl(133, 47%, 45%);
+    display: table;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
   }
   
   .displayTableCell {
     display: table-cell;
     vertical-align: middle;
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
+    
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   

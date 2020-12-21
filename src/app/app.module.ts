@@ -27,6 +27,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 // Auth service
 import { AuthService } from "./core/service/auth.service";
+import { VerifyemailComponent } from './components/auth/verifyemail/verifyemail.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { AuthService } from "./core/service/auth.service";
     ContactComponent,
     QuienesSomosComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    VerifyemailComponent
   ],
   imports: [
     BrowserModule,

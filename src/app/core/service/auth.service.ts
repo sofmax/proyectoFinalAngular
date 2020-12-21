@@ -48,20 +48,27 @@ export class AuthService {
   register(email, password) {
     return this.afAuth.auth.createUserWithEmailAndPassword(email, password)
       .then((result) => {
+        this.SendVerificationMail();
         this.SetUserData(result.user);
       }).catch((error) => {
         window.alert(error.message)
       })
   }
 
-    
+   
+  SendVerificationMail() {
+    return this.afAuth.auth.currentUser.sendEmailVerification()
+    .then(() => {
+      this.router.navigate(['verifyemail']);
+    })
+  }
+  
   get isLoggedIn(): boolean {
     const user = JSON.parse(localStorage.getItem('user'));
     return (user !== null && user.emailVerified !== false) ? true : false;
   }
 
-   
-  
+    
   SetUserData(user) {
     const userRef: AngularFirestoreDocument<any> = this.afs.doc(`user/${user.uid}`);
     const userData: User = {
@@ -76,7 +83,14 @@ export class AuthService {
     })
   }
 
-  
+   
+  SignOut() {
+    return this.afAuth.auth.signOut().then(() => {
+      localStorage.removeItem('user');
+      this.router.navigate(['login']);
+    })
+  }
+
 
 
 }
