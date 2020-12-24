@@ -51,7 +51,10 @@ import { IndicatorComponent } from './components/indicator/indicator.component';
     QuienesSomosComponent,
     LoginComponent,
     RegisterComponent,
-    VerifyemailComponent
+    VerifyemailComponent,
+    IndicadoresComponent,
+    IndicatorComponent,
+    IndicatorsComponent
   ],
   imports: [
     BrowserModule,
