@@ -20,13 +20,13 @@ import {AuthGuard} from "./auth.guard";
  const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard]  },
-  { path: 'quienes', component: QuienesSomosComponent},
-  { path: 'productos', component: Products2Component},
-  { path: 'indicadores', component: IndicadoresComponent, 
+  { path: 'quienes', component: QuienesSomosComponent, canActivate: [AuthGuard] },
+  { path: 'productos', component: Products2Component, canActivate: [AuthGuard] },
+  { path: 'indicadores', component: IndicadoresComponent, canActivate: [AuthGuard],
            children: [ { path: 'indicators', 
         loadChildren: './components/indicators/indicators.module#IndicatorsModule'} ]
     },
-  { path: 'contacto', component: ContactComponent},
+  { path: 'contacto', component: ContactComponent,canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'verifyemail', component: VerifyemailComponent}

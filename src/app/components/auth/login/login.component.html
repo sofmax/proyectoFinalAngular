@@ -3,8 +3,14 @@
 
 <div class="displayTable">
     <div class="displayTableCell">
-  
-      <div class="authBlock">
+      <div class="authBlock"     *ngIf="authService.userData as user; else logOnLogin">
+        <a>Bienvenido: {{(user.email) ? user.email : ''}}</a>
+        <br>
+        <a (click)="authService.SignOut()"><i class="login-register"></i>Salir</a>
+      </div>
+
+      <ng-template #logOnLogin>
+
         <h3>Login </h3>
         <div class="formGroup">
           <input type="text" class="formControl" placeholder="Ingresa Email User" #userName required>
@@ -18,9 +24,8 @@
         <div class="formGroup">
           <input type="button" class="default-btn btn-hover" value="Aceptar" (click)="authService.login(userName.value, userPassword.value)">
         </div>
-        
-      </div>
-  
+
+      </ng-template>
     </div>
   </div>
   
