@@ -4,18 +4,19 @@
   
   
       <div class="authBlock">
-        <h3>Crear Usuario</h3>
+        <h3>Registrar Usuario</h3>
   
         <div class="formGroup">
           <input type="email" class="formControl" placeholder="Ingresa Email" #userEmail required>
         </div>
+        <br>
   
         <div class="formGroup">
           <input type="password" class="formControl" placeholder="Ingresa Password" #userPwd required>
         </div>
   
         <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Aceptar" (click)="authService.register(userEmail.value, userPwd.value)">
+          <input type="button" class="default-btn btn-hover" value="Aceptar" (click)="authService.register(userEmail.value, userPwd.value)">
         </div>
         
       </div> 

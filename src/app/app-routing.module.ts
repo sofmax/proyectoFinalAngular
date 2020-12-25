@@ -22,8 +22,9 @@ import {AuthGuard} from "./auth.guard";
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard]  },
   { path: 'quienes', component: QuienesSomosComponent},
   { path: 'productos', component: Products2Component},
-  { path: 'indicadores', component: IndicadoresComponent, children: [
-    { path: 'indicators', loadChildren: './components/indicators/indicators.module#IndicatorsModule'} ]
+  { path: 'indicadores', component: IndicadoresComponent, 
+           children: [ { path: 'indicators', 
+        loadChildren: './components/indicators/indicators.module#IndicatorsModule'} ]
     },
   { path: 'contacto', component: ContactComponent},
   { path: 'login', component: LoginComponent},
