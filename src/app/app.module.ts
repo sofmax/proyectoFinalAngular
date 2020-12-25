@@ -33,6 +33,7 @@ import { IndicadoresComponent } from './indicadores/indicadores.component';
 import { IndicatorsComponent } from './components/indicators/indicators.component';
 import { IndicatorComponent } from './components/indicator/indicator.component';
 import { StringToDatePipe } from './string-to-date.pipe';
+import { LayoutComponent } from './layout/layout.component';
 
 
 
@@ -56,7 +57,8 @@ import { StringToDatePipe } from './string-to-date.pipe';
     IndicadoresComponent,
     IndicatorComponent,
     IndicatorsComponent,
-    StringToDatePipe
+    StringToDatePipe,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
