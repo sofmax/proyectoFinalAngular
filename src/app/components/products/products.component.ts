@@ -15,6 +15,9 @@ export class ProductsComponent implements OnInit {
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente de 1kg ropa blanca y color',
     price: 3000,
+    unidad: 'Kg',
+    cantidad:'9.5',
+    marca:'Omo'
   },
   {
     id: 2,
@@ -22,7 +25,10 @@ export class ProductsComponent implements OnInit {
     title: 'Detergente HomeCare',
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
-    price: 3000,
+    price: 2600,
+    unidad: 'Kg',
+    cantidad:'4.43',
+    marca:'Care'
   },
   {
     id: 3,
@@ -31,22 +37,31 @@ export class ProductsComponent implements OnInit {
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
     price: 5000,
+    unidad: 'Kg',
+    cantidad:'3',
+    marca:'Popeye'
   },
   {
     id: 4,
     imagen: 'assets/img//product/4.jpg',
     title: 'Detergente Ariel',
     categoria : 'Detergente Ropa',
-    descripcion: 'Detergente líquido 4.43 L',
-    price: 3000,
+    descripcion: 'Detergente líquido ',
+    price: 1500,
+    unidad: 'Lts',
+    cantidad:'10',
+    marca:'Ariel'
   },
   {
     id: 5,
     imagen: 'assets/img//product/5.jpg',
     title: 'Detergente OMO Soft',
     categoria : 'Detergente Ropa',
-    descripcion: 'Detergente líquido 4.43 L',
-    price: 3000,
+    descripcion: 'Detergente líquido ',
+    price: 500,
+    unidad: 'Kg',
+    cantidad:'2',
+    marca:'Omo'
   },
   {
     id: 6,
@@ -55,6 +70,9 @@ export class ProductsComponent implements OnInit {
     categoria : 'Detergente Ropa',
     descripcion: 'Detergente líquido 4.43 L',
     price: 3000,
+    unidad: 'Lts',
+    cantidad:'1.5',
+    marca:'Perwol'
   },
 ]
 clickProduct(id: number){

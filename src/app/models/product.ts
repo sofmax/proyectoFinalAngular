@@ -5,4 +5,7 @@ export interface Product {
     categoria: string;
     descripcion:string;
     price: number;
+    unidad : string;
+    cantidad : string;
+    marca : string;
 }
