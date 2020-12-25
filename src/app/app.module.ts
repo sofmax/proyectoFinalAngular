@@ -32,6 +32,7 @@ import { VerifyemailComponent } from './components/auth/verifyemail/verifyemail.
 import { IndicadoresComponent } from './indicadores/indicadores.component';
 import { IndicatorsComponent } from './components/indicators/indicators.component';
 import { IndicatorComponent } from './components/indicator/indicator.component';
+import { StringToDatePipe } from './string-to-date.pipe';
 
 
 
@@ -54,7 +55,8 @@ import { IndicatorComponent } from './components/indicator/indicator.component';
     VerifyemailComponent,
     IndicadoresComponent,
     IndicatorComponent,
-    IndicatorsComponent
+    IndicatorsComponent,
+    StringToDatePipe
   ],
   imports: [
     BrowserModule,

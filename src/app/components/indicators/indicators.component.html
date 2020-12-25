@@ -36,32 +36,33 @@
 
         <tr>
           <td> <div *ngIf="indicators" >{{indicators.nombre | json}}</div></td>
-          <td> <div *ngIf="indicators" >{{indicators.valor  | json}}</div></td>
-          <td> <div *ngIf="indicators" >{{indicators.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicators" >{{indicators.valor  | json }}</div></td>
+          <td> <div *ngIf="indicators" >{{indicators.fecha  | json | stringToDate }}</div></td>
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.fecha  | json  }}</div></td>  
+          <!-- Valor sin pipe Intencional -->
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.fecha  | json | stringToDate }}</div></td>
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.fecha  | json | stringToDate }}</div></td>
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.fecha  | json | stringToDate }}</div></td>
         </tr>
 
       </table>
