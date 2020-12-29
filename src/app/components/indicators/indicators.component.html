@@ -1,29 +1,7 @@
-<div class="product-grid">
-    <!-- <app-indicator></app-indicator> -->
-
-    <!-- <div *ngFor="let d of dolar">
-      <h2>Valor del Dolar : {{d.Valor}} - Fecha : {{d.Fecha}}</h2>  
-    </div>
-    <br>
-
-    <!-- {{indicators | json}} -->
-
-    <!-- <div *ngFor="let i of indicators">
-     {{i}}   
-    </div> -->
-
-    <!-- <div *ngFor="let item of indicators| keyvalue">
-      {{ item.key }} - {{ item.value }}
-    </div>
-    <div>---------------------------------------------------</div>
-
-    <div *ngIf="indicators" >{{indicators.codigo | json}}</div> -->
-
- -->
-
-    <div class="panel panel-default">
+<div class="product-grid2" >
+  <div class="panel panel-default" >
       <!-- Default panel contents -->
-      <div class="panel-heading">Indicadores Economicos API</div>
+      <div >Indicadores Economicos API</div>
     
       <!-- Table -->
       <table class="table">
@@ -36,39 +14,39 @@
 
         <tr>
           <td> <div *ngIf="indicators" >{{indicators.nombre | json}}</div></td>
-          <td> <div *ngIf="indicators" >{{indicators.valor  | json}}</div></td>
-          <td> <div *ngIf="indicators" >{{indicators.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicators" >{{indicators.valor  | json }}</div></td>
+          <td> <div *ngIf="indicators" >{{indicators.fecha  | json | stringToDate }}</div></td>
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorDolar" >{{indicatorDolar.fecha  | json  }}</div></td>  
+          <!-- Valor sin pipe Intencional -->
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorEuro" >{{indicatorEuro.fecha  | json | stringToDate }}</div></td>
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorBitcoin" >{{indicatorBitcoin.fecha  | json | stringToDate }}</div></td>
         </tr>
 
         <tr>
           <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.nombre | json}}</div></td>
           <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.valor  | json}}</div></td>
-          <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.fecha  | json}}</div></td>
+          <td> <div *ngIf="indicatorIpc" >{{indicatorIpc.fecha  | json | stringToDate }}</div></td>
         </tr>
 
       </table>
     </div>
-  
-  
-    
- </div>
+  </div> 
+
+ 
   
 

@@ -32,9 +32,11 @@ import { VerifyemailComponent } from './components/auth/verifyemail/verifyemail.
 import { IndicadoresComponent } from './indicadores/indicadores.component';
 import { IndicatorsComponent } from './components/indicators/indicators.component';
 import { IndicatorComponent } from './components/indicator/indicator.component';
+import { StringToDatePipe } from './string-to-date.pipe';
+import { LayoutComponent } from './layout/layout.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
 
-
-
+import{FormsModule}from '@angular/forms';
 
 
 @NgModule({
@@ -54,7 +56,10 @@ import { IndicatorComponent } from './components/indicator/indicator.component';
     VerifyemailComponent,
     IndicadoresComponent,
     IndicatorComponent,
-    IndicatorsComponent
+    IndicatorsComponent,
+    StringToDatePipe,
+    LayoutComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,8 @@ import { IndicatorComponent } from './components/indicator/indicator.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

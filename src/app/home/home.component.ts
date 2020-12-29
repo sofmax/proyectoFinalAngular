@@ -1,15 +1,65 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  DoCheck,
+  AfterContentInit,
+  AfterContentChecked,
+  AfterViewInit,
+  AfterViewChecked,
+  OnDestroy,
+  } from '@angular/core';
 
-@Component({
+
+  @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+ 
+  export class HomeComponent
+  implements
+  OnInit,
+  DoCheck,
+  AfterContentInit,
+  AfterContentChecked,
+  AfterViewInit,
+  AfterViewChecked,
+  OnDestroy {
+  
+  public nombre:string="";
 
-  constructor() { }
+  constructor() {
+  console.log(`Home Constructor `);
+  }
 
-  ngOnInit() {
+    ngOnInit() {
+  console.log(`Home ngOnInit `);
+  }
+
+  ngDoCheck():void {
+  console.log('Home ngDoCheck');
+  }
+
+  ngAfterContentInit():void {
+  console.log('Home ngAfterContentInit');
+  }
+
+  ngAfterContentChecked():void {
+  console.log('Home ngAfterContentChecked');
+  }
+
+  ngAfterViewInit():void {
+  console.log('Home ngAfterViewInit');
+  }
+
+  ngAfterViewChecked():void {
+  console.log('Home ngAfterViewChecked');
+  }
+
+  ngOnDestroy():void {
+  console.log('Home ngOnDestroy');
   }
 
 }
+  
+  
