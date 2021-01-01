@@ -1,34 +1,31 @@
 
 
         <div class="card" style="width: 18rem;">
-            
             <div class="product-wrap mb-30">
-          
-            
             <div>
-                <div class="product-title-big">
-                    {{product.title}}
-                </div>
+                <div class="product-title-big">{{product.title}}</div>
                 <hr width="90%" />
             </div>
          
             <img [src]="product.imagen" class="card-img-top" alt="...">
-            <div class="card-body" style="padding: 0px !important;">
-             
-           
-            </div>
+            <div class="card-body" style="padding: 0px !important;"></div>
            
             <div class="product-content" style="margin-left: 0.5rem; margin-right: 0.5rem;">
                 <div class="pro-title-rating-wrap">
                     <div class="product-title" >
                         <h3><a href="#">Puntuacion</a></h3>
                     </div>
-                    <div class="product-rating">
+                    
+                    <div  class="product-rating" >
+
+
+                        <i *ngFor="let in of contador(product.star), let i=index" class="zmdi zmdi-star"></i>
+                        <i *ngFor="let in of contador2(product.star), let i=index" class="zmdi zmdi-star-outline"></i>
+                        <!-- <i class="zmdi zmdi-star"></i>
                         <i class="zmdi zmdi-star"></i>
                         <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star"></i>
-                        <i class="zmdi zmdi-star-outline"></i>
+                        
+                        <i class="zmdi zmdi-star-outline"></i> -->
                     </div>
                 </div>
                 <!-- ----------------UNIDAD DE MEDIDA ------------------------------- -->
@@ -55,20 +52,16 @@
                     <span class="pro-price">{{product.marca}}</span>
                 </div>
 
-
-
+                <!-- ----------------Precios------------------------------- -->
                 <div class="pro-category-price">
                     <span class="pro-category">Precio:</span>
                     <span class="pro-price">${{product.price}}</span>
                 </div>
 
+                <!-- ----------------Agregar al Carro---------------------- -->
                 <div class="pro-details-cart">
                     <a class="default-btn btn-hover"  (click)="addCart()" >Agregar al Carro</a>
                 </div>
             </div>
         
         </div> 
-  
-
-
-

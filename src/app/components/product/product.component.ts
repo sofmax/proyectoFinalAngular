@@ -25,7 +25,13 @@ export class ProductComponent implements OnInit {
     this.productClicked.emit(this.product.id)
   }
 
-  
+  contador(i:number){
+    return new Array(i);
+  }
+
+  contador2(i:number){
+    return new Array(5-i);
+  }
 
   constructor() { }
 

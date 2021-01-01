@@ -17,7 +17,8 @@ export class ProductsComponent implements OnInit {
     price: 3000,
     unidad: 'Kg',
     cantidad:'9.5',
-    marca:'Omo'
+    marca:'Omo',
+    star:1
   },
   {
     id: 2,
@@ -28,7 +29,8 @@ export class ProductsComponent implements OnInit {
     price: 2600,
     unidad: 'Kg',
     cantidad:'4.43',
-    marca:'Care'
+    marca:'Care',
+    star:3
   },
   {
     id: 3,
@@ -39,7 +41,8 @@ export class ProductsComponent implements OnInit {
     price: 5000,
     unidad: 'Kg',
     cantidad:'3',
-    marca:'Popeye'
+    marca:'Popeye',
+    star:4
   },
   {
     id: 4,
@@ -50,7 +53,8 @@ export class ProductsComponent implements OnInit {
     price: 1500,
     unidad: 'Lts',
     cantidad:'10',
-    marca:'Ariel'
+    marca:'Ariel',
+    star:5
   },
   {
     id: 5,
@@ -61,7 +65,8 @@ export class ProductsComponent implements OnInit {
     price: 500,
     unidad: 'Kg',
     cantidad:'2',
-    marca:'Omo'
+    marca:'Omo',
+    star:1
   },
   {
     id: 6,
@@ -72,7 +77,8 @@ export class ProductsComponent implements OnInit {
     price: 3000,
     unidad: 'Lts',
     cantidad:'1.5',
-    marca:'Perwol'
+    marca:'Perwol',
+    star:3
   },
 ]
 clickProduct(id: number){

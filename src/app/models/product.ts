@@ -8,4 +8,5 @@ export interface Product {
     unidad : string;
     cantidad : string;
     marca : string;
+    star : number;
 }
