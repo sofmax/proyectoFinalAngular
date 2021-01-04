@@ -6,8 +6,49 @@
         <h3>Ciclo de Vida</h3>
         <div class="formGroup">
         <input type="text" class="formControl" placeholder="Ingresa Texto" name="" id="" [(ngModel)]="nombre">
-        <app-formulario [nombre]="nombre"></app-formulario>
-        </div>  
+        <app-formulario  ></app-formulario>
+        </div> 
+        
+        <table>
+            <tr>
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">Valor Actual</span></td>
+                <td> <input type="text" class="form-control" [value]="nombre"></td>
+
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">Valor Previo</span></td>
+                <td> <input type="text" class="form-control" [value]="valor" ></td>
+            </tr>
+            
+            
+            
+            <tr>
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">Constructor</span></td>
+                <td> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">ngOnInit</span></td>
+                <td> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+            </tr>
+
+            <tr>
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">ngDoCheck</span></td>
+                <td> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">ngAfterContentInit</span></td>
+                <td> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+            </tr>
+
+            <tr>
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">Valor Actual</span></td>
+                <td> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+
+                <td><span class="input-group-text" id="inputGroup-sizing-sm">Valor Previo</span></td>
+                <td> <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"></td>
+            </tr>
+
+           
+              
+             
+
+        </table>
      
     </div>
   </div>

@@ -19,18 +19,12 @@ export class IndicatorsComponent implements OnInit {
   
   dolar;
 
-  
   listIndicator = [];
-
   indicators: TipoIndicador ;
   indicatorDolar : TipoIndicador ;
-
   indicatorEuro : TipoIndicador ;
   indicatorBitcoin : TipoIndicador ;
   indicatorIpc : TipoIndicador ;
-
-
-
 
   constructor(
     public indicatorService: IndicatorService
@@ -51,35 +45,15 @@ export class IndicatorsComponent implements OnInit {
     })
   }
 
- 
-
-
-
   fechIndicators(){
     this.indicatorService.getAllIndicator()
     .subscribe(datos => {
-    //  console.log(datos);
-
-     // this.indicators= datos;
-      // this.indicators.codigo=datos.dolar.codigo;
-       
-    //  this.listIndicator = this.generateArray(datos);
-    //  console.log(this.listIndicator[3]);
-    //  console.log(this.generateArray(datos.dolar));
-     // this.indicators= datos.dolar;
-     // this.indicators= this.generateArray(datos.dolar);
-   //  console.log( JSON.stringify(datos['uf']))
      console.log( datos);
    this.indicators = datos['uf'];
    this.indicatorDolar = datos['dolar'];
    this.indicatorEuro = datos['euro'];
    this.indicatorBitcoin = datos['bitcoin'];
    this.indicatorIpc = datos['ipc'];
-
-  //   this.indicators =  this.generateArray(datos['uf']);
-
-   //  console.log("valor del aparse"+ JSON.parse(datos))
-
      
     }
       )
@@ -90,19 +64,5 @@ export class IndicatorsComponent implements OnInit {
     return Object.keys(obj).map((key)=>{ return obj[key]});
  }
 
-
-  
-
-  // fechIndicators(){
-  //   this.indicatorService.getAllIndicator()
-  //   .subscribe(indicators=> {
-     
-    
-  //    this.indicators = indicators;
-      
-  //   }
-  //     )
-
-  // }
 
 }

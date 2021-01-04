@@ -26,9 +26,10 @@ import {AuthGuard} from "./auth.guard";
       { path: 'quienes', component: QuienesSomosComponent, canActivate: [AuthGuard] },
       { path: 'productos', component: Products2Component, canActivate: [AuthGuard] },
       { path: 'contacto', component: ContactComponent,canActivate: [AuthGuard] },
+      { path: 'indicadores', component: IndicadoresComponent, canActivate: [AuthGuard] },
     ]
   },
-  { path: 'indicadores', component: IndicadoresComponent, canActivate: [AuthGuard] },
+ 
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent},
   { path: 'verifyemail', component: VerifyemailComponent}

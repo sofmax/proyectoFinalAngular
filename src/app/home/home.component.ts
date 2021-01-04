@@ -7,6 +7,7 @@ import {
   AfterViewInit,
   AfterViewChecked,
   OnDestroy,
+  Input
   } from '@angular/core';
 
 
@@ -27,6 +28,7 @@ import {
   OnDestroy {
   
   public nombre:string="";
+  public valor:string="";
 
   constructor() {
   console.log(`Home Constructor `);

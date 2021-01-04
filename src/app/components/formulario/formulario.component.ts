@@ -8,6 +8,8 @@ import { Component, OnInit, OnChanges, SimpleChanges, Input} from '@angular/core
 export class FormularioComponent implements OnInit, OnChanges {
 
   @Input() nombre:string="";
+  @Input() valorPrevio:string="";    
+ 
   constructor() { }
 
   ngOnInit()
@@ -18,6 +20,7 @@ export class FormularioComponent implements OnInit, OnChanges {
       let chng=changes[propName];
       let cur=JSON.stringify(chng.currentValue);
       let prev=JSON.stringify(chng.previousValue);
+     // this.valor=prev;
       console.log("Valor Actual "+cur,"Valor Previo "+prev);
 
     }
